@@ -10,7 +10,12 @@
 * It should be a String.
 **/
 
-
+var firstName = "Naoto";
+var lastName = "Yamaguchi";
+var birthPlace = "Hawaii";
+console.log(firstName);
+console.log(lastName);
+console.log(birthPlace);
 
 /**
 * #2
@@ -22,7 +27,12 @@
 * Their values should be a Number
 **/
 
-
+var favoriteNumber = 51;
+var currentYear = 2016;
+var thatOnePrinceSong = 1999;
+console.log(favoriteNumber)
+console.log(currentYear)
+console.log(thatOnePrinceSong)
 
 /**
 * #3
@@ -34,7 +44,14 @@
 * Their values should be a Boolean
 **/
 
-
+var isDayTime = true;
+var isLeftHanded = false;
+var inHawaii = true;
+var isHappyCoding = true;
+console.log(isDayTime);
+console.log(isLeftHanded);
+console.log(inHawaii);
+console.log(isHappyCoding);
 
 /**
 * #4
@@ -45,7 +62,10 @@
 * Their values should be a Null value
 **/
 
-
+var enrolledAtDevLeague = null;
+var completedFridayPrep = null;
+console.log(enrolledAtDevLeague);
+console.log(completedFridayPrep);
 
 /**
 * #5a
@@ -56,7 +76,8 @@
 * which can be found along the west coast of The United States.
 **/
 
-
+var westCoast = ["California", "Oregon", "Washington"];
+console.log(westCoast);
 
 /**
 * #5b
@@ -67,6 +88,8 @@
 * Have at least ten even values in this array.
 **/
 
+var evenNumbers = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+console.log(evenNumbers);
 
 
 /**
@@ -80,8 +103,12 @@
 * Extend this behavior to include subtraction, multiplication and division.
 */
 
-
-
+var sumOfNumbers = 10 + 5 + 4;
+var productOfNumbers = 10 * 4 * 5;
+var quotientOfNumbers = 10 / 4 / 5;
+console.log(sumOfNumbers);
+console.log(productOfNumbers);
+console.log(quotientOfNumbers);
 
 /**
 * #6b Comparisons & Logic
@@ -101,7 +128,14 @@
 *   operator(==) vs triple comparison operator(===).
 */
 
-
+var isEqual = "Tacocat" === "tacocat";
+console.log(isEqual);
+console.log(0 == false);
+console.log(0 === false);
+console.log("0" == 0);
+console.log("0" === 0);
+console.log(null == undefined);
+console.log(null === undefined);
 
 /**
 * #6c Assignments
@@ -119,7 +153,16 @@
 *   it can only test that you declared the variable by giving it the right name.
 */
 
-
+var generalContainer = "The general container";
+console.log(generalContainer);
+var generalContainer = 2;
+console.log(generalContainer);
+var generalContainer = false;
+console.log(generalContainer);
+var generalContainer = null;
+console.log(generalContainer);
+var generalContainer = 10+12;
+console.log(generalContainer);
 
 /**
 * #7a
@@ -133,7 +176,11 @@
 * Store the return value to a variable named `jumpResult` and use console.log to inspect the value which was returned by your function
 **/
 
+function jump(height){
+  return console.log("I jumped " +height+ " feet high!")
+}
 
+jump(9);
 
 /**
 * #7b
@@ -145,3 +192,8 @@
 * if invoked in this way -> cook("Tomatoes", "Cheese", "Pizza");
 **/
 
+function cook(ingredient1, ingredient2, recipeName){
+  return console.log(ingredient1 + " and " + ingredient2 + " make a " + recipeName + "!")
+}
+
+cook("Tomatoes", "Cheese", "Pizza");
